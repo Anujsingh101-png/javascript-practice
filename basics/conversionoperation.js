@@ -46,7 +46,7 @@ console.log((1 + 2) + 76)
 
 let gamecounter = 100
 let gamecounter1 = 100
-++gamecounter;
+++gamecounter;//the increment operator increments and returns the value after incrementing.
 console.log(gamecounter)
-gamecounter1++;
+gamecounter1++; //the increment operator increments and returns the value before incrementing.
 console.log(gamecounter1)

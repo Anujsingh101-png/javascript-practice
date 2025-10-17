@@ -35,3 +35,26 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++
+// stack(premitive)/heap(non premitive)
+
+let myanme = "anuj singh"
+let myname = myanme
+ myname = "aditya"
+
+ console.log(myanme)
+ console.log(myname)
+
+ let userone = {
+    name : "anuj1",
+    email : "anujsingh2",
+ }
+ 
+let usertwo = userone;
+
+usertwo.email = "anujsinghk"
+
+console.log(usertwo)
+console.log(userone)
+ 

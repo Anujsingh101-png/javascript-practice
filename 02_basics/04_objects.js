@@ -1,5 +1,7 @@
+const { StrictMode } = require("react")
+
 const tenderuser = {} // non singolton obj
-const tender2 = new Object()
+const tender2 = new Object()   //non singolton obj
 
 tenderuser.ID = "djgvbukdb"
 tenderuser.name = "dfjhidfhbi"
@@ -59,3 +61,27 @@ console.log(Object.keys(obj5))  // show in array
 console.log(Object.values(obj5))
 console.log(Object.entries(obj5));
 console.log(obj5.hasOwnProperty('isL'));
+
+
+const course = {
+    sir : "hitash",
+    price : 4666,
+    perpose : "be smart",
+}
+course.price
+
+const {price : f} = course // construcror
+console.log(f);
+
+// JSON - javascript object notation
+// {
+//    name:"anuj",
+//    sex:"male",
+//   age : 23,
+// }
+
+[              
+    {},
+    {},
+    {}
+]               // json also available in array form

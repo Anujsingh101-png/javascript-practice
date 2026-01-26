@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #121212; color: aliceblue;">
+    <ul class = "listname">
+        <li>ajay singh</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(lin){
+     const li = document.createElement('li')
+     li.innerText = lin
+     document.querySelector('.listname').appendChild(li)
+    } // this will iterate through whole tree whenever function is call 
+    addlanguage("anuj singh")
+    addlanguage("santosh singh")
+   
+    function addoptilanguage(ling){
+        const  li = document.createElement('li')
+        li.appendChild(document.createTextNode(ling))
+        document.querySelector('.listname').appendChild(li)
+    } // it is a optimise solution and mainly used for very big projects
+    addoptilanguage("jhdgfujsdgvjg")
+    addoptilanguage("jhsgfjhgakfgkasjgfjk")
+    
+    //edit
+    const lang = document.querySelector('li:nth-child(4)')
+     //lang.innerText = "maharana pratap"
+    const li = document.createElement('li')
+     li.textContent = "sexy boy"
+    lang.replaceWith(li)
+    //remove
+    const lang1 = document.querySelector('li:last-child')
+    lang1.remove()
+
+</script>
+</html>
